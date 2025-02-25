@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Profile</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <nav>
+                <ul>
+                    <li><a href="Profile.html">Profile</a></li>
+                    <li><a href="mark.html">Mark To Grade</a></li>
+                    <li><a href="stuff.html">STUFF</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div class="profile-section">
+                <div class="profile-section">
+                    <div class="photo-frame">
+                        <img src="https://live.staticflickr.com/65535/49408184122_b6906fb0e9_b.jpg" alt="Profile Picture">
+                    </div>
+                    <p class="profile-name" id="name" style="display: none;">Al Pacino</p>
+                </div>
+                
+                <div class="info">
+                    <p>Al Pacino is an iconic American actor and filmmaker, widely regarded as one of the greatest actors in the history of cinema. Born on April 25, 1940, in New York City, Pacino gained recognition for his powerful performances in both stage and film productions. His breakthrough role came in 1972 when he starred as Michael Corleone in Francis Ford Coppola's The Godfather, a performance that earned him his first Academy Award nomination. Pacino's career continued to soar with roles in films like Dog Day Afternoon (1975), Scarface (1983), and The Godfather Part II (1974), solidifying his place as a Hollywood legend.</p>
+                    <p>Over the years, Pacino has demonstrated an incredible range, portraying a wide array of complex characters across various genres. His intense acting style, combined with his ability to bring depth to even the most morally ambiguous figures, has made him a standout in films such as Heat (1995), Scent of a Woman (1992), and The Devil's Advocate (1997). Despite his tough persona, Pacino's dedication to his craft has earned him numerous accolades, including an Academy Award for Best Actor for his role in Scent of a Woman. As an actor and director, Al Pacino continues to captivate audiences with his unparalleled talent and enduring influence in the entertainment industry.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> Shamsuddin Nazari.  copy right information.</p>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            window.onload=function(){
+                setTimeout(function(){
+                    document.getElementById("name").style.display= "block";
+                }, 10000);
+                
+            };
+        </script>
+    </footer>
+</body>
+</html>

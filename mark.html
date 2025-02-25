@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark To Grade</title>
+    <link rel="stylesheet" href="mark.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="mark.html">Mark To Grade</a></li>
+                <li><a href="stuff.html">STUFF</a></li>
+                <li><a href="weather.html">Weather</a></li>
+               
+            </ul>
+        </div>
+
+        
+        <div class="content">
+            <h2>Mark to Grade Converter</h2>
+            <input type="text" id="mark-input-box" placeholder="Enter mark (0 - 100)">
+            <button onclick="MarkToGrade()">Convert</button>
+
+            <p id="validation-message"></p>
+            <p id="grade-result"></p>
+        </div>
+    </div>
+    <script>
+        const footer = document.createElement('footer');
+        const year = new Date().getFullYear();
+        footer.innerHTML = `Shamsuddin Nazari &copy; ${year}. All Rights Reserved.`;
+        document.body.appendChild(footer);
+    </script>
+
+    <script src="mark.js"></script>
+
+</body>
+</html>

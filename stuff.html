@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Page</title>
+    <link rel="stylesheet" href="stuff.css">
+</head>
+<body>
+    <div class="container">
+        
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="mark.html">Mark To Grade</a></li>
+                    <li><a href="stuff.html">STUFF</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    
+                </ul>
+            </nav>
+        </aside>
+
+        
+        <div class="main-content">
+            <h1>Staff Information</h1>
+
+            <div class="sort-buttons">
+                <button onclick="sortByName()">Sort by Name</button>
+                <button onclick="sortBySalary()">Sort by Salary</button>
+            </div>
+
+            <table id="staff-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Location</th>
+                        <th>Employee ID</th>
+                        <th>Start Date</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody id="staff-body">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        const footer = document.createElement('footer');
+        const year = new Date().getFullYear();
+        footer.innerHTML = `Shamsuddin Nazari &copy; ${year}. All Rights Reserved.`;
+        document.body.appendChild(footer);
+    </script>
+
+    <script src="stuff.js"></script>
+</body>
+</html>
